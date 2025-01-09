@@ -28,7 +28,7 @@ public class Alumno extends Persona {
     @Override
     public String toString() {
 
-        return "Alumno con" + " NIA " + NIA + ", en el grado " + grado + "de nommbre" + super.toString();
+        return "Alumno con" + " NIA " + NIA + ", en el grado " + grado + " de nommbre " + super.toString();
     }
 
 }
