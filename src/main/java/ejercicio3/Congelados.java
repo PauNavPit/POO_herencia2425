@@ -17,6 +17,15 @@ public class Congelados extends Producto {
     public void setTemperatura(String temperatura) {
         this.temperatura = temperatura;
     }
+    @Override
+    public void ponerPrecio(double precio) {
+        this.precio = precio;
+
+    }
+    @Override
+    public String toString() {
+        return  super.toString()+ "Producto congelado{" + " con temperatura" + getTemperatura() ;
+    }
 
 
 }

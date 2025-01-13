@@ -1,4 +1,5 @@
 package ejercicio3;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Fresco extends Producto {
@@ -31,8 +32,15 @@ public Fresco(LocalDate fecha, int lote,LocalDate fechaenvasado, String pais) {
     }
 
     @Override
+    public void ponerPrecio(double precio) {
+    this.precio = precio;
+
+    }
+
+
+    @Override
     public String toString() {
-        return "Producto{" + " con fecha=" + fecha + ", lote=" + lote + '}';
+        return  super.toString()+ " Producto fresco " + " con fecha de envasado " + getFechaenvasado() + " del pais " + getPais() +'}';
     }
 
 

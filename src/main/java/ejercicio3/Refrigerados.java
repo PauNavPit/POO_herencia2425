@@ -17,6 +17,17 @@ public class Refrigerados extends Producto {
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
+    @Override
+    public void ponerPrecio(double precio) {
+        this.precio = precio;
+
+    }
+
+    @Override
+    public String toString() {
+        return  super.toString()+ "Producto refrigerado{" + " con fecha= de envasado" + getCodigo() ;
+    }
+
 
 
 }

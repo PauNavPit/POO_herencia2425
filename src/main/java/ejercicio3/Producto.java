@@ -7,6 +7,7 @@ public abstract class Producto {
 
     private LocalDate fecha;
     private int lote;
+    protected double precio;
 
     public Producto(LocalDate fecha, int lote) {
         this.fecha = fecha;
@@ -29,8 +30,11 @@ public abstract class Producto {
         this.lote = lote;
     }
 
+    public abstract void ponerPrecio(double precio);
+
+
     @Override
     public String toString() {
-        return "Producto{" + " con fecha=" + fecha + ", lote=" + lote + '}';
+        return "Producto{" + " con fecha=" + fecha + ", lote=" + lote + ", precio=" + precio  ;
     }
 }
